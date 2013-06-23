@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		1F6F63620F07E08E00D8F4EA /* OpenGLWaveFrontObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F63520F07E08E00D8F4EA /* OpenGLWaveFrontObject.m */; };
+		1F6F63630F07E08E00D8F4EA /* OpenGLWaveFrontGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F63550F07E08E00D8F4EA /* OpenGLWaveFrontGroup.m */; };
+		1F6F63640F07E08E00D8F4EA /* OpenGLTexture3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F63560F07E08E00D8F4EA /* OpenGLTexture3D.m */; };
+		1F6F63650F07E08E00D8F4EA /* OpenGLWaveFrontMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F63570F07E08E00D8F4EA /* OpenGLWaveFrontMaterial.m */; };
+		1F6F63660F07E08E00D8F4EA /* Wavefront_OBJ_LoaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F635A0F07E08E00D8F4EA /* Wavefront_OBJ_LoaderAppDelegate.m */; };
+		1F6F63670F07E08E00D8F4EA /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F635D0F07E08E00D8F4EA /* GLViewController.m */; };
+		1F6F63680F07E08E00D8F4EA /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F63600F07E08E00D8F4EA /* GLView.m */; };
+		1F6F636B0F07E09600D8F4EA /* gluLookAt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F636A0F07E09600D8F4EA /* gluLookAt.m */; };
+		1FF0216C0EF21FA500761551 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FF0216B0EF21FA500761551 /* MainWindow.xib */; };
+		2D500B940D5A79C200DBA0E3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D500B920D5A79C200DBA0E3 /* OpenGLES.framework */; };
+		2D500B9A0D5A79CF00DBA0E3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D500B990D5A79CF00DBA0E3 /* QuartzCore.framework */; };
+		4924B3AF0FBC9E200016776E /* red1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4924B3A80FBC9E200016776E /* red1.png */; };
+		4924B3B00FBC9E200016776E /* red5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4924B3A90FBC9E200016776E /* red5.png */; };
+		4924B3B10FBC9E200016776E /* red6.png in Resources */ = {isa = PBXBuildFile; fileRef = 4924B3AA0FBC9E200016776E /* red6.png */; };
+		4924B3B20FBC9E200016776E /* red3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4924B3AB0FBC9E200016776E /* red3.png */; };
+		4924B3B30FBC9E200016776E /* red2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4924B3AC0FBC9E200016776E /* red2.png */; };
+		4924B3B40FBC9E200016776E /* red4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4924B3AD0FBC9E200016776E /* red4.png */; };
+		4924B3B50FBC9E200016776E /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 4924B3AE0FBC9E200016776E /* red.png */; };
+		4987084B0FBB355F00F7AA91 /* checkerboard.obj in Resources */ = {isa = PBXBuildFile; fileRef = 498708490FBB355F00F7AA91 /* checkerboard.obj */; };
+		4987084E0FBB356500F7AA91 /* checkerboard.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 4987084D0FBB356500F7AA91 /* checkerboard.mtl */; };
+		498708540FBB377A00F7AA91 /* checkerboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 498708530FBB377A00F7AA91 /* checkerboard.png */; };
+		498708F80FBBABF600F7AA91 /* mydesk.obj in Resources */ = {isa = PBXBuildFile; fileRef = 498708F60FBBABF600F7AA91 /* mydesk.obj */; };
+		498708F90FBBABF600F7AA91 /* mydesk.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 498708F70FBBABF600F7AA91 /* mydesk.mtl */; };
+		498708FB0FBBABFC00F7AA91 /* tableTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 498708FA0FBBABFC00F7AA91 /* tableTexture.png */; };
+		4989E9B90FB6789D0023DFA7 /* SoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4989E9B80FB6789D0023DFA7 /* SoundEffect.m */; };
+		4989E9EA0FB679040023DFA7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4989E9E90FB679040023DFA7 /* AudioToolbox.framework */; };
+		4989EA5B0FB682A50023DFA7 /* floor2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4989EA570FB682A50023DFA7 /* floor2.wav */; };
+		4989EA5C0FB682A50023DFA7 /* floor1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4989EA580FB682A50023DFA7 /* floor1.wav */; };
+		4989EA870FB685240023DFA7 /* mixing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4989EA860FB685240023DFA7 /* mixing.wav */; };
+		498A0AB80FB7C5FF000E712F /* stage.obj in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AA30FB7C5FF000E712F /* stage.obj */; };
+		498A0AB90FB7C5FF000E712F /* sexydie1-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AA40FB7C5FF000E712F /* sexydie1-5.png */; };
+		498A0ABA0FB7C5FF000E712F /* sexydie1-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AA50FB7C5FF000E712F /* sexydie1-2.png */; };
+		498A0ABB0FB7C5FF000E712F /* brickwall.png in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AA60FB7C5FF000E712F /* brickwall.png */; };
+		498A0ABC0FB7C5FF000E712F /* sexydie1-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AA70FB7C5FF000E712F /* sexydie1-4.png */; };
+		498A0ABD0FB7C5FF000E712F /* sexydie2-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AA80FB7C5FF000E712F /* sexydie2-3.png */; };
+		498A0ABE0FB7C5FF000E712F /* sexydie2-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AA90FB7C5FF000E712F /* sexydie2-6.png */; };
+		498A0ABF0FB7C5FF000E712F /* sexydie2-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AAA0FB7C5FF000E712F /* sexydie2-4.png */; };
+		498A0AC00FB7C5FF000E712F /* sexy_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AAB0FB7C5FF000E712F /* sexy_empty.png */; };
+		498A0AC10FB7C5FF000E712F /* sexydie1-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AAC0FB7C5FF000E712F /* sexydie1-6.png */; };
+		498A0AC20FB7C5FF000E712F /* sexydie2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AAD0FB7C5FF000E712F /* sexydie2-1.png */; };
+		498A0AC30FB7C5FF000E712F /* sexydie1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AAE0FB7C5FF000E712F /* sexydie1-1.png */; };
+		498A0AC40FB7C5FF000E712F /* sexydie2-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AAF0FB7C5FF000E712F /* sexydie2-5.png */; };
+		498A0AC50FB7C5FF000E712F /* stage.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AB00FB7C5FF000E712F /* stage.mtl */; };
+		498A0AC60FB7C5FF000E712F /* floor.png in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AB10FB7C5FF000E712F /* floor.png */; };
+		498A0AC70FB7C5FF000E712F /* die.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AB20FB7C5FF000E712F /* die.mtl */; };
+		498A0AC80FB7C5FF000E712F /* sexydie2-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AB30FB7C5FF000E712F /* sexydie2-2.png */; };
+		498A0AC90FB7C5FF000E712F /* sexydie1-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AB40FB7C5FF000E712F /* sexydie1-3.png */; };
+		498A0ACA0FB7C5FF000E712F /* sexydie1.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AB50FB7C5FF000E712F /* sexydie1.mtl */; };
+		498A0ACB0FB7C5FF000E712F /* die.obj in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AB60FB7C5FF000E712F /* die.obj */; };
+		498A0ACC0FB7C5FF000E712F /* sexydie1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AB70FB7C5FF000E712F /* sexydie1.obj */; };
+		498A0AEE0FB7CAFC000E712F /* sexydie2.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AEC0FB7CAFC000E712F /* sexydie2.mtl */; };
+		498A0AEF0FB7CAFC000E712F /* sexydie2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 498A0AED0FB7CAFC000E712F /* sexydie2.obj */; };
+		499A4EEC0FDB485D0058D757 /* vend.png in Resources */ = {isa = PBXBuildFile; fileRef = 499A4EEB0FDB485D0058D757 /* vend.png */; };
+		49A170050FBA975F00C21BAC /* desk.obj in Resources */ = {isa = PBXBuildFile; fileRef = 49A170040FBA975F00C21BAC /* desk.obj */; };
+		49A170260FBA9C8F00C21BAC /* desk.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 49A170250FBA9C8F00C21BAC /* desk.mtl */; };
+		49ED55C40FD9D0E500FABD03 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49ED55C30FD9D0E500FABD03 /* MainMenuViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* iDice3d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDice3d.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F3B9A820EF2151B00286867 /* Wavefront_OBJ_Loader_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wavefront_OBJ_Loader_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		1F6F63520F07E08E00D8F4EA /* OpenGLWaveFrontObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLWaveFrontObject.m; path = Classes/OpenGLWaveFrontObject.m; sourceTree = "<group>"; };
+		1F6F63530F07E08E00D8F4EA /* OpenGLTexture3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLTexture3D.h; path = Classes/OpenGLTexture3D.h; sourceTree = "<group>"; };
+		1F6F63540F07E08E00D8F4EA /* Wavefront_OBJ_LoaderAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wavefront_OBJ_LoaderAppDelegate.h; path = Classes/Wavefront_OBJ_LoaderAppDelegate.h; sourceTree = "<group>"; };
+		1F6F63550F07E08E00D8F4EA /* OpenGLWaveFrontGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLWaveFrontGroup.m; path = Classes/OpenGLWaveFrontGroup.m; sourceTree = "<group>"; };
+		1F6F63560F07E08E00D8F4EA /* OpenGLTexture3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLTexture3D.m; path = Classes/OpenGLTexture3D.m; sourceTree = "<group>"; };
+		1F6F63570F07E08E00D8F4EA /* OpenGLWaveFrontMaterial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLWaveFrontMaterial.m; path = Classes/OpenGLWaveFrontMaterial.m; sourceTree = "<group>"; };
+		1F6F63580F07E08E00D8F4EA /* OpenGLWaveFrontObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLWaveFrontObject.h; path = Classes/OpenGLWaveFrontObject.h; sourceTree = "<group>"; };
+		1F6F63590F07E08E00D8F4EA /* OpenGLWaveFrontGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLWaveFrontGroup.h; path = Classes/OpenGLWaveFrontGroup.h; sourceTree = "<group>"; };
+		1F6F635A0F07E08E00D8F4EA /* Wavefront_OBJ_LoaderAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Wavefront_OBJ_LoaderAppDelegate.m; path = Classes/Wavefront_OBJ_LoaderAppDelegate.m; sourceTree = "<group>"; };
+		1F6F635B0F07E08E00D8F4EA /* OpenGLWaveFrontMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLWaveFrontMaterial.h; path = Classes/OpenGLWaveFrontMaterial.h; sourceTree = "<group>"; };
+		1F6F635C0F07E08E00D8F4EA /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLView.h; path = Classes/GLView.h; sourceTree = "<group>"; };
+		1F6F635D0F07E08E00D8F4EA /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLViewController.m; path = Classes/GLViewController.m; sourceTree = "<group>"; };
+		1F6F635E0F07E08E00D8F4EA /* GLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLViewController.h; path = Classes/GLViewController.h; sourceTree = "<group>"; };
+		1F6F635F0F07E08E00D8F4EA /* ConstantsAndMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConstantsAndMacros.h; path = Classes/ConstantsAndMacros.h; sourceTree = "<group>"; };
+		1F6F63600F07E08E00D8F4EA /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLView.m; path = Classes/GLView.m; sourceTree = "<group>"; };
+		1F6F63610F07E08E00D8F4EA /* OpenGLWaveFrontCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLWaveFrontCommon.h; path = Classes/OpenGLWaveFrontCommon.h; sourceTree = "<group>"; };
+		1F6F63690F07E09600D8F4EA /* gluLookAt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gluLookAt.h; path = Classes/gluLookAt.h; sourceTree = "<group>"; };
+		1F6F636A0F07E09600D8F4EA /* gluLookAt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gluLookAt.m; path = Classes/gluLookAt.m; sourceTree = "<group>"; };
+		1FF0216B0EF21FA500761551 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = SOURCE_ROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D500B920D5A79C200DBA0E3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		2D500B990D5A79CF00DBA0E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4924B3A80FBC9E200016776E /* red1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red1.png; sourceTree = "<group>"; };
+		4924B3A90FBC9E200016776E /* red5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red5.png; sourceTree = "<group>"; };
+		4924B3AA0FBC9E200016776E /* red6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red6.png; sourceTree = "<group>"; };
+		4924B3AB0FBC9E200016776E /* red3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red3.png; sourceTree = "<group>"; };
+		4924B3AC0FBC9E200016776E /* red2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red2.png; sourceTree = "<group>"; };
+		4924B3AD0FBC9E200016776E /* red4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red4.png; sourceTree = "<group>"; };
+		4924B3AE0FBC9E200016776E /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		498708490FBB355F00F7AA91 /* checkerboard.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = checkerboard.obj; sourceTree = "<group>"; };
+		4987084D0FBB356500F7AA91 /* checkerboard.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = checkerboard.mtl; sourceTree = "<group>"; };
+		498708530FBB377A00F7AA91 /* checkerboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkerboard.png; sourceTree = "<group>"; };
+		498708F60FBBABF600F7AA91 /* mydesk.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mydesk.obj; sourceTree = "<group>"; };
+		498708F70FBBABF600F7AA91 /* mydesk.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mydesk.mtl; sourceTree = "<group>"; };
+		498708FA0FBBABFC00F7AA91 /* tableTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableTexture.png; sourceTree = "<group>"; };
+		4989E9B70FB6789D0023DFA7 /* SoundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundEffect.h; path = Classes/SoundEffect.h; sourceTree = "<group>"; };
+		4989E9B80FB6789D0023DFA7 /* SoundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoundEffect.m; path = Classes/SoundEffect.m; sourceTree = "<group>"; };
+		4989E9E90FB679040023DFA7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4989EA570FB682A50023DFA7 /* floor2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = floor2.wav; sourceTree = "<group>"; };
+		4989EA580FB682A50023DFA7 /* floor1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = floor1.wav; sourceTree = "<group>"; };
+		4989EA860FB685240023DFA7 /* mixing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mixing.wav; sourceTree = "<group>"; };
+		498A0AA30FB7C5FF000E712F /* stage.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stage.obj; sourceTree = "<group>"; };
+		498A0AA40FB7C5FF000E712F /* sexydie1-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sexydie1-5.png"; sourceTree = "<group>"; };
+		498A0AA50FB7C5FF000E712F /* sexydie1-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sexydie1-2.png"; sourceTree = "<group>"; };
+		498A0AA60FB7C5FF000E712F /* brickwall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brickwall.png; sourceTree = "<group>"; };
+		498A0AA70FB7C5FF000E712F /* sexydie1-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sexydie1-4.png"; sourceTree = "<group>"; };
+		498A0AA80FB7C5FF000E712F /* sexydie2-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sexydie2-3.png"; sourceTree = "<group>"; };
+		498A0AA90FB7C5FF000E712F /* sexydie2-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sexydie2-6.png"; sourceTree = "<group>"; };
+		498A0AAA0FB7C5FF000E712F /* sexydie2-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sexydie2-4.png"; sourceTree = "<group>"; };
+		498A0AAB0FB7C5FF000E712F /* sexy_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sexy_empty.png; sourceTree = "<group>"; };
+		498A0AAC0FB7C5FF000E712F /* sexydie1-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sexydie1-6.png"; sourceTree = "<group>"; };
+		498A0AAD0FB7C5FF000E712F /* sexydie2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sexydie2-1.png"; sourceTree = "<group>"; };
+		498A0AAE0FB7C5FF000E712F /* sexydie1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sexydie1-1.png"; sourceTree = "<group>"; };
+		498A0AAF0FB7C5FF000E712F /* sexydie2-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sexydie2-5.png"; sourceTree = "<group>"; };
+		498A0AB00FB7C5FF000E712F /* stage.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stage.mtl; sourceTree = "<group>"; };
+		498A0AB10FB7C5FF000E712F /* floor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = floor.png; sourceTree = "<group>"; };
+		498A0AB20FB7C5FF000E712F /* die.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = die.mtl; sourceTree = "<group>"; };
+		498A0AB30FB7C5FF000E712F /* sexydie2-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sexydie2-2.png"; sourceTree = "<group>"; };
+		498A0AB40FB7C5FF000E712F /* sexydie1-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sexydie1-3.png"; sourceTree = "<group>"; };
+		498A0AB50FB7C5FF000E712F /* sexydie1.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sexydie1.mtl; sourceTree = "<group>"; };
+		498A0AB60FB7C5FF000E712F /* die.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = die.obj; sourceTree = "<group>"; };
+		498A0AB70FB7C5FF000E712F /* sexydie1.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sexydie1.obj; sourceTree = "<group>"; };
+		498A0AEC0FB7CAFC000E712F /* sexydie2.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sexydie2.mtl; sourceTree = "<group>"; };
+		498A0AED0FB7CAFC000E712F /* sexydie2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sexydie2.obj; sourceTree = "<group>"; };
+		499A4EEB0FDB485D0058D757 /* vend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vend.png; sourceTree = "<group>"; };
+		49A170040FBA975F00C21BAC /* desk.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = desk.obj; sourceTree = "<group>"; };
+		49A170250FBA9C8F00C21BAC /* desk.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = desk.mtl; sourceTree = "<group>"; };
+		49ED55C20FD9D0E500FABD03 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = Classes/MainMenuViewController.h; sourceTree = "<group>"; };
+		49ED55C30FD9D0E500FABD03 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = Classes/MainMenuViewController.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */,
+				2D500B940D5A79C200DBA0E3 /* OpenGLES.framework in Frameworks */,
+				2D500B9A0D5A79CF00DBA0E3 /* QuartzCore.framework in Frameworks */,
+				4989E9EA0FB679040023DFA7 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* iDice3d.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F6FE4750EF5CE0E0056D7EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				499A4EEB0FDB485D0058D757 /* vend.png */,
+				4924B3A80FBC9E200016776E /* red1.png */,
+				4924B3A90FBC9E200016776E /* red5.png */,
+				4924B3AA0FBC9E200016776E /* red6.png */,
+				4924B3AB0FBC9E200016776E /* red3.png */,
+				4924B3AC0FBC9E200016776E /* red2.png */,
+				4924B3AD0FBC9E200016776E /* red4.png */,
+				4924B3AE0FBC9E200016776E /* red.png */,
+				498708FA0FBBABFC00F7AA91 /* tableTexture.png */,
+				498708F60FBBABF600F7AA91 /* mydesk.obj */,
+				498708F70FBBABF600F7AA91 /* mydesk.mtl */,
+				498708530FBB377A00F7AA91 /* checkerboard.png */,
+				4987084D0FBB356500F7AA91 /* checkerboard.mtl */,
+				498708490FBB355F00F7AA91 /* checkerboard.obj */,
+				49A170040FBA975F00C21BAC /* desk.obj */,
+				49A170250FBA9C8F00C21BAC /* desk.mtl */,
+				498A0AA40FB7C5FF000E712F /* sexydie1-5.png */,
+				498A0AA50FB7C5FF000E712F /* sexydie1-2.png */,
+				498A0AA60FB7C5FF000E712F /* brickwall.png */,
+				498A0AA70FB7C5FF000E712F /* sexydie1-4.png */,
+				498A0AA80FB7C5FF000E712F /* sexydie2-3.png */,
+				498A0AA90FB7C5FF000E712F /* sexydie2-6.png */,
+				498A0AAA0FB7C5FF000E712F /* sexydie2-4.png */,
+				498A0AAB0FB7C5FF000E712F /* sexy_empty.png */,
+				498A0AAC0FB7C5FF000E712F /* sexydie1-6.png */,
+				498A0AAD0FB7C5FF000E712F /* sexydie2-1.png */,
+				498A0AAE0FB7C5FF000E712F /* sexydie1-1.png */,
+				498A0AAF0FB7C5FF000E712F /* sexydie2-5.png */,
+				498A0AA30FB7C5FF000E712F /* stage.obj */,
+				498A0AB00FB7C5FF000E712F /* stage.mtl */,
+				498A0AB10FB7C5FF000E712F /* floor.png */,
+				498A0AB30FB7C5FF000E712F /* sexydie2-2.png */,
+				498A0AB70FB7C5FF000E712F /* sexydie1.obj */,
+				498A0AB50FB7C5FF000E712F /* sexydie1.mtl */,
+				498A0AED0FB7CAFC000E712F /* sexydie2.obj */,
+				498A0AEC0FB7CAFC000E712F /* sexydie2.mtl */,
+				498A0AB40FB7C5FF000E712F /* sexydie1-3.png */,
+				498A0AB60FB7C5FF000E712F /* die.obj */,
+				498A0AB20FB7C5FF000E712F /* die.mtl */,
+			);
+			path = Models;
+			sourceTree = SOURCE_ROOT;
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				2D500B1D0D5A766B00DBA0E3 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1F3B9A820EF2151B00286867 /* Wavefront_OBJ_Loader_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4989EA5D0FB682AE0023DFA7 /* Sounds */,
+				1F6FE4750EF5CE0E0056D7EB /* Models */,
+				1FF0216B0EF21FA500761551 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4989E9E90FB679040023DFA7 /* AudioToolbox.framework */,
+				1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */,
+				2D500B990D5A79CF00DBA0E3 /* QuartzCore.framework */,
+				2D500B920D5A79C200DBA0E3 /* OpenGLES.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D500B1D0D5A766B00DBA0E3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4989E9B70FB6789D0023DFA7 /* SoundEffect.h */,
+				4989E9B80FB6789D0023DFA7 /* SoundEffect.m */,
+				1F6F63690F07E09600D8F4EA /* gluLookAt.h */,
+				1F6F636A0F07E09600D8F4EA /* gluLookAt.m */,
+				1F6F63610F07E08E00D8F4EA /* OpenGLWaveFrontCommon.h */,
+				1F6F635F0F07E08E00D8F4EA /* ConstantsAndMacros.h */,
+				1F6F63540F07E08E00D8F4EA /* Wavefront_OBJ_LoaderAppDelegate.h */,
+				1F6F635A0F07E08E00D8F4EA /* Wavefront_OBJ_LoaderAppDelegate.m */,
+				1F6F63530F07E08E00D8F4EA /* OpenGLTexture3D.h */,
+				1F6F63560F07E08E00D8F4EA /* OpenGLTexture3D.m */,
+				1F6F63590F07E08E00D8F4EA /* OpenGLWaveFrontGroup.h */,
+				1F6F63550F07E08E00D8F4EA /* OpenGLWaveFrontGroup.m */,
+				1F6F635B0F07E08E00D8F4EA /* OpenGLWaveFrontMaterial.h */,
+				1F6F63570F07E08E00D8F4EA /* OpenGLWaveFrontMaterial.m */,
+				1F6F63580F07E08E00D8F4EA /* OpenGLWaveFrontObject.h */,
+				1F6F63520F07E08E00D8F4EA /* OpenGLWaveFrontObject.m */,
+				1F6F635C0F07E08E00D8F4EA /* GLView.h */,
+				1F6F63600F07E08E00D8F4EA /* GLView.m */,
+				1F6F635E0F07E08E00D8F4EA /* GLViewController.h */,
+				1F6F635D0F07E08E00D8F4EA /* GLViewController.m */,
+				49ED55C20FD9D0E500FABD03 /* MainMenuViewController.h */,
+				49ED55C30FD9D0E500FABD03 /* MainMenuViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		4989EA5D0FB682AE0023DFA7 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				4989EA570FB682A50023DFA7 /* floor2.wav */,
+				4989EA580FB682A50023DFA7 /* floor1.wav */,
+				4989EA860FB685240023DFA7 /* mixing.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Wavefront OBJ Loader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Wavefront OBJ Loader" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wavefront OBJ Loader";
+			productName = foo;
+			productReference = 1D6058910D05DD3D006BFB54 /* iDice3d.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "dice3d" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Wavefront OBJ Loader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF0216C0EF21FA500761551 /* MainWindow.xib in Resources */,
+				4989EA5B0FB682A50023DFA7 /* floor2.wav in Resources */,
+				4989EA5C0FB682A50023DFA7 /* floor1.wav in Resources */,
+				4989EA870FB685240023DFA7 /* mixing.wav in Resources */,
+				498A0AB80FB7C5FF000E712F /* stage.obj in Resources */,
+				498A0AB90FB7C5FF000E712F /* sexydie1-5.png in Resources */,
+				498A0ABA0FB7C5FF000E712F /* sexydie1-2.png in Resources */,
+				498A0ABB0FB7C5FF000E712F /* brickwall.png in Resources */,
+				498A0ABC0FB7C5FF000E712F /* sexydie1-4.png in Resources */,
+				498A0ABD0FB7C5FF000E712F /* sexydie2-3.png in Resources */,
+				498A0ABE0FB7C5FF000E712F /* sexydie2-6.png in Resources */,
+				498A0ABF0FB7C5FF000E712F /* sexydie2-4.png in Resources */,
+				498A0AC00FB7C5FF000E712F /* sexy_empty.png in Resources */,
+				498A0AC10FB7C5FF000E712F /* sexydie1-6.png in Resources */,
+				498A0AC20FB7C5FF000E712F /* sexydie2-1.png in Resources */,
+				498A0AC30FB7C5FF000E712F /* sexydie1-1.png in Resources */,
+				498A0AC40FB7C5FF000E712F /* sexydie2-5.png in Resources */,
+				498A0AC50FB7C5FF000E712F /* stage.mtl in Resources */,
+				498A0AC60FB7C5FF000E712F /* floor.png in Resources */,
+				498A0AC70FB7C5FF000E712F /* die.mtl in Resources */,
+				498A0AC80FB7C5FF000E712F /* sexydie2-2.png in Resources */,
+				498A0AC90FB7C5FF000E712F /* sexydie1-3.png in Resources */,
+				498A0ACA0FB7C5FF000E712F /* sexydie1.mtl in Resources */,
+				498A0ACB0FB7C5FF000E712F /* die.obj in Resources */,
+				498A0ACC0FB7C5FF000E712F /* sexydie1.obj in Resources */,
+				498A0AEE0FB7CAFC000E712F /* sexydie2.mtl in Resources */,
+				498A0AEF0FB7CAFC000E712F /* sexydie2.obj in Resources */,
+				49A170050FBA975F00C21BAC /* desk.obj in Resources */,
+				49A170260FBA9C8F00C21BAC /* desk.mtl in Resources */,
+				4987084B0FBB355F00F7AA91 /* checkerboard.obj in Resources */,
+				4987084E0FBB356500F7AA91 /* checkerboard.mtl in Resources */,
+				498708540FBB377A00F7AA91 /* checkerboard.png in Resources */,
+				498708F80FBBABF600F7AA91 /* mydesk.obj in Resources */,
+				498708F90FBBABF600F7AA91 /* mydesk.mtl in Resources */,
+				498708FB0FBBABFC00F7AA91 /* tableTexture.png in Resources */,
+				4924B3AF0FBC9E200016776E /* red1.png in Resources */,
+				4924B3B00FBC9E200016776E /* red5.png in Resources */,
+				4924B3B10FBC9E200016776E /* red6.png in Resources */,
+				4924B3B20FBC9E200016776E /* red3.png in Resources */,
+				4924B3B30FBC9E200016776E /* red2.png in Resources */,
+				4924B3B40FBC9E200016776E /* red4.png in Resources */,
+				4924B3B50FBC9E200016776E /* red.png in Resources */,
+				499A4EEC0FDB485D0058D757 /* vend.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1F6F63620F07E08E00D8F4EA /* OpenGLWaveFrontObject.m in Sources */,
+				1F6F63630F07E08E00D8F4EA /* OpenGLWaveFrontGroup.m in Sources */,
+				1F6F63640F07E08E00D8F4EA /* OpenGLTexture3D.m in Sources */,
+				1F6F63650F07E08E00D8F4EA /* OpenGLWaveFrontMaterial.m in Sources */,
+				1F6F63660F07E08E00D8F4EA /* Wavefront_OBJ_LoaderAppDelegate.m in Sources */,
+				1F6F63670F07E08E00D8F4EA /* GLViewController.m in Sources */,
+				1F6F63680F07E08E00D8F4EA /* GLView.m in Sources */,
+				1F6F636B0F07E09600D8F4EA /* gluLookAt.m in Sources */,
+				4989E9B90FB6789D0023DFA7 /* SoundEffect.m in Sources */,
+				49ED55C40FD9D0E500FABD03 /* MainMenuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Radif Sharafullin";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Wavefront_OBJ_Loader_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PREBINDING = NO;
+				PRODUCT_NAME = iDice3d;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0256712B-1DFF-481F-98D6-808C0059F401";
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PREBINDING = NO;
+				PRODUCT_NAME = iDice3d;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Radif Sharafullin";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Radif Sharafullin";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "0256712B-1DFF-481F-98D6-808C0059F401";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0256712B-1DFF-481F-98D6-808C0059F401";
+				SDKROOT = iphoneos2.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Wavefront OBJ Loader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "dice3d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
